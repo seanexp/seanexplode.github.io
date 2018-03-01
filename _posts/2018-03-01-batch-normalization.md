@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Batch Normalization
+url: Batch-Normalization
 categories: [Machine Learning, ]
 ---
 
