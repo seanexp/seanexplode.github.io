@@ -53,7 +53,7 @@ $ ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags . $(pytho
 [rampart81](https://rampart81.github.io/post/python-ctags/) 님은 다음과 같이 alias를 지정해서 사용하신다고 한다. 나도 역시 이와 같은 alias를 사용한다.
 
 {% highlight bash %}
-$ alias python_ctags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags . $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
+alias python_ctags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags . $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
 {% endhighlight %}
 
 ```~/.bash_profile``` 혹은 ```~/.bashrc``` 에 추가해서 사용하면 될 듯하다.
