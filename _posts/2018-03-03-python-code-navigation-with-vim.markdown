@@ -34,7 +34,7 @@ $ ctags -R .
 
 {% highlight bash %}
 $ ctags -R --fields=+l --languages=python --python-kinds=-iv -f /.tags ./
-{% endhightlight %}
+{% endhighlight %}
 
 ctags의 매뉴얼을 보면 다음과 같이 옵션의 효과들을 볼 수 있다.
 
@@ -48,9 +48,10 @@ ctags의 매뉴얼을 보면 다음과 같이 옵션의 효과들을 볼 수 있
 
 {% highlight bash %}
 $ ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags . $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")
-{% endhightlight %}
+{% endhighlight %}
 
 [rampart81](https://rampart81.github.io/post/python-ctags/) 님은 다음과 같이 alias를 지정해서 사용하신다고 한다. 나도 역시 이와 같은 alias를 사용한다.
+
 {% highlight bash %}
 $ alias python_ctags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags . $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")"
 {% endhighlight %}
