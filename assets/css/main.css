@@ -882,7 +882,8 @@ table tfoot td {
 }
 
 article.article-page {
-	width: 100%;
+	max-width: calc(100vw - 250px);
+	min-width: 100%;
 }
 
 ::-moz-selection {
