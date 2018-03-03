@@ -443,6 +443,11 @@ template {
   margin: 0;
 }
 
+.highlight pre { 
+	white-space: pre;
+	overflow: auto;
+}
+
 .highlighter-rouge {
   color: #ce887b;
   font-weight: 400;
