@@ -12,7 +12,7 @@ tags: [Vim, ]
 
 *command mode* 에서 ```:split <filename>```을 하거나 ```:sp <filename>```을 한다. 그러면 아래와 같이 새 파일이 아래에 열린다.
 
-![:split을 이용한 화면 분할]({{ "/assets/img/vim_multiple_window/vim_split.png" | absolute_url }})
+![:split을 이용한 화면 분할]({{ "/assets/img/vim_split.png" | absolute_url }})
 
 하지만 나는 코드가 위아래로 보이는 것보다 옆으로 보이는게 더 편해서 ```:vsplit <filename>``` 혹은 ```:vs <filename>``` 을 사용한다. 그러면 아래와 같이 화면이 분할된 것을 볼 수 있다.
 
