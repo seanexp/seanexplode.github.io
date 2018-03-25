@@ -34,7 +34,7 @@ tags: [Vim, ]
 
 화면을 새로 생성하고 나면 다음과 같이 화면이 좁아 코드가 읽기 힘들어서 터미널의 크기를 크게 키우고 싶을 때가 있다.
 
-![화면이 작아 읽기 어려운 코드]({{ "/assets/img/vim_multiple-window/hard-to-read.png" | absolute_url }})
+![화면이 작아 읽기 어려운 코드]({{ "/assets/img/vim-multiple-window/hard-to-read.png" | absolute_url }})
 
 그래서 화면의 크기를 키우고 나면 다음과 같이 왼쪽 코드는 화면의 크기가 여전히 작음을 볼 수 있다.
 
