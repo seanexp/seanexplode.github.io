@@ -36,10 +36,38 @@ $ conda create --name myenv python=3.5
 $ source activate myenv
 {% endhighlight %}
 
-*myenv* 대신 자신의 virtualenv 이름을 쓰면 된다. virtualenv에서 빠져나오기 위해서는
+*myenv* 대신 자신의 virtualenv 이름을 쓰면 된다. 만들어진 virtualenv에 들어가는 것을 virtualenv를 활성화(activate)했다고 표현한다. virtualenv를 활성화하면 아래 사진과 같이 shell에 맨 왼쪽에 virtualenv의 이름이 괄호로 감싸져있는 것을 확인할 수 있다. 
+
+{% include image.html url="/assets/img/add-virtualenv-kernel/virtualenv-name.png" %}
+
+virtualenv에서 빠져나오기 위해서는
 
 {% highlight bash %}
 $ source deactivate
 {% endhighlight %}
 
 라고 치면 된다.
+
+## 가상환경 커널 추가하기
+
+이렇게 만든 virtualenv를 **jupyter notebook**에서 활용하려면 추가적인 작업을 해주어야 한다. 먼저, virtualenv를 활성화한다.
+
+{% highlight bash %}
+$ source activate myenv
+{% endhighlight %}
+
+그 다음 ```ipykernel```을 설치한다.
+
+{% highlight bash %}
+$ pip install ipykernel
+{% endhighlight %}
+
+그리고 나서는 커널을 스스로 설치하는 스크립트를 실행해준다.
+
+{% highlight bash %}
+$ python -m ipykernel install --user --name=myenv
+{% endhighlight %}
+
+역시 마찬가지로 *myenv* 대신에 자신의 virtualenv의 이름을 넣어주면 된다. 다음과 같이 virtualenv의 커널이 생긴 것을 확인할 수 있다.
+
+{% include image.html url="/assets/img/add-virtualenv-kernel/check.png" description="가상환경과 같은 이름의 커널이 생긴 것을 확인할 수 있다." %}
